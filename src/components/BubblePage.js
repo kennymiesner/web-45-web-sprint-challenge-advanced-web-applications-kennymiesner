@@ -12,7 +12,7 @@ const BubblePage = () => {
   useEffect(() => {
     fetchColorService()
       .then(res => {
-        setColors(res)
+        setColors(res.data)
       })
   }, [])
 

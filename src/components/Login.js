@@ -13,7 +13,7 @@ const Login = () => {
 
   const [credentials, setCredentials] = useState(initialValues)
   const [error, setError] = useState('')
-  const history = useHistory()
+  const { push } = useHistory()
 
   const handleChange = e => {
     setCredentials({
@@ -28,7 +28,7 @@ const Login = () => {
       .post('/login', credentials)
       .then(res => {
         localStorage.setItem('token', res.data.payload)
-        history.push('/bubbles')
+        push('/bubbles')
       })
       .catch(err => {
         setError('Incorrect username or password.')

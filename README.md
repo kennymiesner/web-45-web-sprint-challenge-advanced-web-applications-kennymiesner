@@ -76,10 +76,10 @@ Your finished project must include all of the following requirements. **Unlike o
 #### API Documentation
 * **[POST]** * to `http://localhost:5000/api/login`: returns a token to be added to the header of all other requests. Pass in the following credentials as the `body` of the request: `{ username: 'Lambda', password: 'School' }`
 * **[POST]** * to `http://localhost:5000/api/logout`: returns a token to be added to the header of all other requests.
-* **[GET]** to `http://localhost:5000/api/colors`: returns the list of colors and their hex codes. This endpoint canYeah only be accessed by an autheticated user.
-* **[POST]** to `http://localhost:5000/api/colors`: creates a new color object. Pass the color as the `body` of the request (the second argument passed to `axios.post`). This endpoint can only be accessed by an autheticated user.
+* **[GET]** to `http://localhost:5000/api/colors`: returns the list of colors and their hex codes. This endpoint canYeah only be accessed by an authenticated user.
+* **[POST]** to `http://localhost:5000/api/colors`: creates a new color object. Pass the color as the `body` of the request (the second argument passed to `axios.post`). This endpoint can only be accessed by an authenticated user.
 * **[PUT]** to `http://localhost:5000/api/colors/:id`: updates the color using the `id` passed as part of the URL. Send the color object with the updated information as the `body` of the request (the second argument passed to `axios.put`). This endpoint can only be accessed by an authenticated user.
-* **[DELETE]** to `http://localhost:5000/api/colors/123`: removes the color using the `id` passed as part of the URL (123 in example). This endpoint can only be accessed by an autheticated user.
+* **[DELETE]** to `http://localhost:5000/api/colors/123`: removes the color using the `id` passed as part of the URL (123 in example). This endpoint can only be accessed by an authenticated user.
 
 #### Hex Color Examples
 **Note** You can use the sites like the following to get color hex codes:

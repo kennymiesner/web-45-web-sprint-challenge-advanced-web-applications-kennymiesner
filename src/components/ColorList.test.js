@@ -6,18 +6,18 @@ import ColorList from './ColorList'
 
 const testColors = [
   { 
-    code: { hex: "#ff0000" }, 
-    color: "Red", 
+    code: { hex: '#ff0000' }, 
+    color: 'Red', 
     id: 1 
   },
   { 
-    code: { hex: "#fff" }, 
-    color: "White", 
+    code: { hex: '#fff' }, 
+    color: 'White', 
     id: 2 
   },
   { 
-    code: { hex: "#0011ff" }, 
-    color: "Blue", 
+    code: { hex: '#0011ff' }, 
+    color: 'Blue', 
     id: 3 
   },
 ]

@@ -30,9 +30,7 @@ const Login = () => {
         localStorage.setItem('token', res.data.payload)
         push('/bubbles')
       })
-      .catch(err => {
-        setError('Incorrect username or password.')
-      })
+      .catch(err => setError('Incorrect username or password.'))
   }
 
   return (

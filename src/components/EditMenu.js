@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 const EditMenu = (props) => {
-  const {editColor, setEditColor, saveEdit, toggleEdit} = props;
+  const {editColor, setEditColor, saveEdit, toggleEdit} = props
   
   const handleChange = (e) => {
     if (e.target.name === "colorName") {
@@ -15,12 +15,12 @@ const EditMenu = (props) => {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    saveEdit(editColor);
+    e.preventDefault()
+    saveEdit(editColor)
   }
 
   const handleCancel = () => {
-    toggleEdit(false);
+    toggleEdit(false)
   }
 
   return(<form id="edit_menu" data-testid="edit_menu" onSubmit={handleSubmit}>
@@ -49,7 +49,7 @@ const EditMenu = (props) => {
         <button type="submit" id="submit" data-testid="submit_button">save</button>
         <button data-testid="cancel_button" onClick={handleCancel}>cancel</button>
       </div>
-  </form>);
+  </form>)
 }
 
-export default EditMenu;
+export default EditMenu

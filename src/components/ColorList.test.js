@@ -1,8 +1,8 @@
-import React from 'react';
-import MutationObserver from 'mutationobserver-shim';
+import React from 'react'
+import MutationObserver from 'mutationobserver-shim'
 
-import { render, screen} from "@testing-library/react";
-import ColorList from './ColorList';
+import { render, screen} from "@testing-library/react"
+import ColorList from './ColorList'
 
 const testColors = [
   { 
@@ -24,20 +24,20 @@ const testColors = [
 
 test("Renders an empty list of colors without errors", () => {
   render(<ColorList colors={[]} />)
-});
+})
 
 test("Renders a list of colors without errors", () => {
   render(<ColorList colors={testColors} />)
   const colors = screen.getAllByTestId('color')
   expect(colors).toHaveLength(3)
-});
+})
 
 test("Renders the EditForm when editing = true and does not render EditForm when editing = false", () => {
   const { rerender } = render(<ColorList colors={testColors} editing={true} />)
   let editForm = screen.queryByText("edit color")
   expect(editForm).toBeInTheDocument()
-  
+
   rerender(<ColorList colors={testColors} editing={false} />)
   editForm = screen.queryByText("edit color")
   expect(editForm).not.toBeInTheDocument()
-});
+})

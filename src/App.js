@@ -1,11 +1,11 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import axiosWithAuth from "./helpers/axiosWithAuth";
+import React from "react"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import axiosWithAuth from "./helpers/axiosWithAuth"
 
 import PrivateRoute from './components/PrivateRoute'
 import Login from './components/Login'
 import BubblePage from './components/BubblePage'
-import "./styles.scss";
+import "./styles.scss"
 
 function App() {
   const handleLogout = () => {
@@ -31,10 +31,10 @@ function App() {
         </Switch>
       </div>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
 
 /*
   Task List:

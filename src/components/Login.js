@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 import { useHistory } from 'react-router-dom'
 import axiosWithAuth from '../helpers/axiosWithAuth'
 
@@ -60,10 +60,10 @@ const Login = () => {
 
       <p id="error" className="error">{error}</p>
     </div>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login
 
 /*
   Task List:
